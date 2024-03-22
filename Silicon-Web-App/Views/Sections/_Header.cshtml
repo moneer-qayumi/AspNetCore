@@ -1,0 +1,45 @@
+﻿
+<header>
+    <div class="header-container">
+        <nav>
+            <div class="nav-container">
+                <img src="/Images/solid.svg" alt="Logo">
+                <a class="nav-links" asp-controller="Home" asp-action="Index" asp-fragment="#showcase">Overview</a>
+                <a class="nav-links" asp-controller="Home" asp-action="Index" asp-fragment="#features">Features</a>
+                <a class="nav-links" asp-controller="Contact" asp-action="Index">Contact</a>
+            </div>
+        </nav>
+        <nav>
+            <div class="nav-container">
+                <p>Light</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Dark</p>
+                <a class="btn light" asp-controller="Account" asp-action="SignIn"><i class="fa-regular fa-arrow-right-to-bracket"></i>Sign in</a>
+                <a class="btn" asp-controller="Account" asp-action="SignUp"><i class="fa-regular fa-user"></i>Sign up</a>
+                <button onclick=showMenu()><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+    </div>
+    <div id="menu" class="header-container mobile">
+        <nav>
+            <div class="nav-container">
+                <a class="nav-links" href="">Overview</a>
+                <a class="nav-links" href="">Features</a>
+                <a class="nav-links" href="">Contact</a>
+                <div class="switch-container">
+                    <p>Light</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <p>Dark</p>
+                </div>
+                <a class="btn light" href=""><i class="fa-regular fa-arrow-right-to-bracket"></i>Sign in</a>
+                <a class="btn" href=""><i class="fa-regular fa-user"></i>Sign up</a>
+            </div>
+        </nav>
+    </div>
+</header>

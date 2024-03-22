@@ -1,0 +1,24 @@
+﻿    <!DOCTYPE html>
+    <html lang="sv-se">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" />
+        <script defer src="https://kit.fontawesome.com/41c8b474e2.js" crossorigin="anonymous"></script>
+        <title>@ViewData["Title"] - Silicon</title>
+        <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+         
+    </head>
+    <body>
+        
+        <div class="wrapper">
+        <partial name="~/Views/Sections/_Header.cshtml" />
+        <main>
+            @RenderBody()
+        </main>
+        <partial name="~/Views/Sections/_Footer.cshtml" />
+        </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    </html>
