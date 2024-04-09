@@ -983,14 +983,6 @@ footer {
 .sign-in-here {
     color: #565973;
     margin-bottom: 35px;
-    a
-
-{
-    color: #6366F1;
-    &:hover
-
-{
-    text-decoration: underline;
 }
 
 }
