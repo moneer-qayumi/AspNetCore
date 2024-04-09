@@ -12,13 +12,21 @@
     <body>
         
         <div class="wrapper">
-        <partial name="~/Views/Sections/_Header.cshtml" />
+            <header>
+            <partial name="~/Views/Sections/_Header.cshtml" />
+            </header>
+       
         <main>
             @RenderBody()
         </main>
-        <partial name="~/Views/Sections/_Footer.cshtml" />
+        <footer>
+            <partial name="~/Views/Sections/_Footer.cshtml" />
+        </footer>
+       
         </div>
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            @* <script src="./js/site.js" asp-append-version="true"></script> *@
+            <script src="./js/validation.js" asp-append-version="true"></script>
     </body>
     </html>

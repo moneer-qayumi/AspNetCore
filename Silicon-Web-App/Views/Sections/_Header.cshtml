@@ -1,4 +1,4 @@
-﻿
+﻿@inject SignInManager<UserEntity> _signInManager
 <header>
     <div class="header-container">
         <nav>
@@ -6,6 +6,10 @@
                 <img src="/Images/solid.svg" alt="Logo">
                 <a class="nav-links" asp-controller="Home" asp-action="Index" asp-fragment="#showcase">Overview</a>
                 <a class="nav-links" asp-controller="Home" asp-action="Index" asp-fragment="#features">Features</a>
+                @if (_signInManager.IsSignedIn(User))
+                {
+                    <a class="nav-links" asp-controller="Courses" asp-action="Courses" asp-fragment="#courses">Courses</a>
+                }
                 <a class="nav-links" asp-controller="Contact" asp-action="Index">Contact</a>
             </div>
         </nav>
@@ -17,8 +21,16 @@
                     <span class="slider round"></span>
                 </label>
                 <p>Dark</p>
-                <a class="btn light" asp-controller="Account" asp-action="SignIn"><i class="fa-regular fa-arrow-right-to-bracket"></i>Sign in</a>
-                <a class="btn" asp-controller="Account" asp-action="SignUp"><i class="fa-regular fa-user"></i>Sign up</a>
+                @if (_signInManager.IsSignedIn(User))
+                {
+                    <a class="btn light" asp-controller="Account" asp-action="SignOut"><i class="fa-regular fa-arrow-right-from-bracket"></i>Sign out</a>
+                }
+                else
+                {
+                    <a class="btn light" asp-controller="Account" asp-action="SignIn"><i class="fa-regular fa-arrow-right-to-bracket"></i>Sign in</a>
+                    <a class="btn" asp-controller="Account" asp-action="SignUp"><i class="fa-regular fa-user"></i>Sign up</a>
+                }
+                
                 <button onclick=showMenu()><i class="fa-solid fa-bars"></i></button>
             </div>
         </nav>

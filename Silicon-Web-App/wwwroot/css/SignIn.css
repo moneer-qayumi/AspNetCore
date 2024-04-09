@@ -1,0 +1,117 @@
+﻿main .sign-in {
+    width: 540px;
+    margin: 80px auto 0 auto;
+}
+
+@media (max-width: 768px) {
+    main .sign-in {
+        width: 85%;
+    }
+}
+
+main .sign-in h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+main .sign-in .sign-up-here {
+    color: #565973;
+    margin-bottom: 35px;
+}
+
+    main .sign-in .sign-up-here a {
+        color: #6366F1;
+    }
+
+        main .sign-in .sign-up-here a:hover {
+            text-decoration: underline;
+        }
+
+main .sign-in form label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+
+main .sign-in form #email, main .sign-in form #password {
+    width: 100%;
+    padding: 12px 18px;
+    border: none;
+    outline: 1px solid #D4D7E5;
+    border-radius: 6px;
+    margin-bottom: 22px;
+}
+
+@media (max-width: 768px) {
+    main .sign-in form #email, main .sign-in form #password {
+        font-size: 14px;
+    }
+}
+
+main .sign-in form .remember-me-container label {
+    display: inline;
+    font-weight: 400;
+    color: #565973;
+}
+
+main .sign-in form .btn {
+    display: block;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 22px 0;
+    padding: 12px 0;
+    width: 100%;
+}
+
+main .sign-in form .forgot-password-container {
+    display: flex;
+    justify-content: center;
+}
+
+    main .sign-in form .forgot-password-container a {
+        color: #6366F1;
+        font-weight: 700;
+    }
+
+        main .sign-in form .forgot-password-container a:hover {
+            text-decoration: underline;
+        }
+
+main .sign-in form .socials-container {
+    margin-top: 30px;
+    border-top: 1px solid #E2E5F1;
+}
+
+    main .sign-in form .socials-container p {
+        font-weight: 700;
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+
+    main .sign-in form .socials-container div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+    }
+
+        main .sign-in form .socials-container div a {
+            text-align: center;
+            font-weight: 700;
+            padding: 12px 0;
+        }
+
+            main .sign-in form .socials-container div a i {
+                margin-right: 10px;
+                font-size: 18px;
+            }
+
+.error-message {
+    background: #F5D7DA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+}

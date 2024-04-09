@@ -1,0 +1,92 @@
+﻿main .sign-up {
+    width: 540px;
+    margin: 80px auto 0 auto;
+}
+
+@media (max-width: 768px) {
+    main .sign-up {
+        width: 85%;
+    }
+}
+
+main .sign-up h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+main .sign-up .sign-in-here {
+    color: #565973;
+    margin-bottom: 35px;
+}
+
+    main .sign-up .sign-in-here a {
+        color: #6366F1;
+    }
+
+        main .sign-up .sign-in-here a:hover {
+            text-decoration: underline;
+        }
+
+main .sign-up form label {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+
+main .sign-up form #email, main .sign-up form #password, main .sign-up form #fname, main .sign-up form #lname, main .sign-up form #conf-password {
+    width: 100%;
+    padding: 12px 18px;
+    border: none;
+    outline: 1px solid #D4D7E5;
+    border-radius: 6px;
+    margin-bottom: 22px;
+}
+
+@media (max-width: 768px) {
+    main .sign-up form #email, main .sign-up form #password, main .sign-up form #fname, main .sign-up form #lname, main .sign-up form #conf-password {
+        font-size: 14px;
+    }
+}
+
+main .sign-up form .name-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+@media (max-width: 768px) {
+    main .sign-up form .name-container {
+        display: block;
+    }
+}
+
+main .sign-up form .terms-container label {
+    display: inline;
+    font-weight: 400;
+    color: #565973;
+}
+
+    main .sign-up form .terms-container label a {
+        color: #6366F1;
+    }
+
+        main .sign-up form .terms-container label a:hover {
+            text-decoration: underline;
+        }
+
+main .sign-up form .btn {
+    display: block;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 22px 0;
+    padding: 12px 0;
+    width: 100%;
+}
+
+.field-validation-error {
+    font-size: 14px;
+    font-weight:400 !important;
+    color: #EF4444;
+}

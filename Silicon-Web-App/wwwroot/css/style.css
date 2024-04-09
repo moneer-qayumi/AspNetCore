@@ -308,6 +308,8 @@ header .mobile nav .nav-container {
             display: block;
         }
 
+
+
 main .showcase {
     position: relative;
 }
@@ -406,6 +408,8 @@ main .showcase .showcase-container .showcase-image {
         display: none;
     }
 }
+
+
 
 main .our-tool {
     background-color: #F3F6FF;
@@ -516,6 +520,8 @@ main .light-dark img {
     }
 }
 
+
+
 main .manage-your-work {
     padding: 100px 0;
 }
@@ -587,6 +593,9 @@ main .manage-your-work .manage-your-work-container div .btn {
     main .manage-your-work .manage-your-work-container div .btn i {
         margin-left: 12px;
     }
+
+
+
 
 main .download-our-app {
     background-color: #F3F6FF;
@@ -733,6 +742,8 @@ main .download-our-app .download-our-app-container .app-download .app-download-c
         main .download-our-app .download-our-app-container .app-download .app-download-container .download a img:hover {
             transform: scale(1.05);
         }
+
+
 
 main .integrate .integrate-container {
     width: 1300px;
@@ -912,6 +923,8 @@ main .newsletter .newsletter-container .input-container button {
     }
 }
 
+
+
 main .newsletter .newsletter-container p {
     color: #9397AD;
     margin: 10px 0 0 0;
@@ -924,6 +937,8 @@ main .newsletter .newsletter-container p {
         main .newsletter .newsletter-container p a:hover {
             text-decoration: none;
         }
+
+
 
 footer {
     padding: 60px 20px;
@@ -965,431 +980,3 @@ footer {
     }
 /*# sourceMappingURL=style.css.map */
 
-.sign-up {
-    width: 540px;
-    margin: 80px auto 0 auto;
-
-    @media(max-width: 768px) {
-        width: 85%;
-    }
-
-    h1
-
-{
-    font-size: 40px;
-    margin: 0;
-}
-
-.sign-in-here {
-    color: #565973;
-    margin-bottom: 35px;
-}
-
-}
-}
-
-form {
-    label
-
-{
-    font-weight: 700;
-    display: block;
-    margin-bottom: 8px;
-}
-
-#email, #password, #fname, #lname, #conf-password {
-    width: 100%;
-    padding: 12px 18px;
-    border: none;
-    outline: 1px solid #D4D7E5;
-    border-radius: 6px;
-    margin-bottom: 22px;
-
-    @media(max-width: 768px) {
-        font-size: 14px;
-    }
-}
-
-.name-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-
-    @media(max-width: 768px) {
-        display: block;
-    }
-}
-
-.terms-container {
-    label
-
-{
-    display: inline;
-    font-weight: 400;
-    color: #565973;
-    a
-
-{
-    color: #6366F1;
-    &:hover
-
-{
-    text-decoration: underline;
-}
-
-}
-}
-}
-
-.btn {
-    display: block;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin: 22px 0;
-    padding: 12px 0;
-    width: 100%;
-}
-
-}
-}
-
-    .sign-in{
-        width: 540px;
-        margin: 80px auto 0 auto;
-
-        @media(max-width: 768px){
-            width: 85%;
-        }
-
-        h1{
-            font-size: 40px;
-
-            margin: 0;
-        }
-
-        .sign-up-here{
-            color: #565973;
-
-            margin-bottom: 35px;
-
-            a{
-                color: #6366F1;
-
-                &:hover{
-                    text-decoration: underline;
-                }
-            }
-        }
-
-        form{
-            label{
-                font-weight: 700;
-
-                display: block;
-
-                margin-bottom: 8px;
-            }
-
-            #email, #password{
-                width: 100%;
-
-                padding: 12px 18px;
-
-                border: none;
-                outline: 1px solid #D4D7E5;
-                border-radius: 6px;
-
-                margin-bottom: 22px;
-
-                @media(max-width: 768px){
-                    font-size: 14px;
-                }
-            }
-
-            .remember-me-container{
-                label{
-                    display: inline;
-
-                    font-weight: 400;
-
-                    color: #565973;
-                }
-            }
-
-            .btn{
-                display: block;
-
-                border: none;
-                border-radius: 6px;
-
-                cursor: pointer;
-
-                margin: 22px 0;
-
-                padding: 12px 0;
-
-                width: 100%;
-            }
-
-            .forgot-password-container{
-                display: flex;
-                justify-content: center;
-
-                a{
-                    color: #6366F1;
-                    font-weight: 700;
-    
-                    &:hover{
-                        text-decoration: underline;
-                    }
-                }
-            }
-
-            .socials-container{
-                margin-top: 30px;
-
-                border-top: 1px solid #E2E5F1;
-
-                p{
-                    font-weight: 700;
-                    text-align: center;
-
-                    margin: 20px 0 0 0;
-                }
-
-                div{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    column-gap: 20px;
-
-                    a{
-                        text-align: center;
-                        font-weight: 700;
-
-                        padding: 12px 0;
-
-                        i{
-                            margin-right: 10px;
-
-                            font-size: 18px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-@media only screen and (max-width: 1400px) {
-    width: 85%;
-}
-
-@media only screen and (max-width: 992px) {
-    grid-template-columns: 220px 1fr;
-}
-
-@media only screen and (max-width: 768px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-
-    width: 98%;
-}
-
-.sidebar {
-    border-right: 1px solid #E2E5F1;
-    height: 100%;
-    text-align: center;
-    padding: 35px 12px;
-
-    @media only screen and (max-width: 768px) {
-        border: none;
-    }
-
-    .image-container
-
-{
-    position: relative;
-    display: inline-block;
-    img
-
-{
-    width: 120px;
-    border-radius: 50%;
-}
-
-a {
-    width: 36px;
-    height: 36px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.05);
-    -webkit-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.05);
-    -moz-box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.05);
-    transition: ease-in-out 30ms;
-    color: black;
-    &:hover
-
-{
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-}
-}
-
-h3 {
-    font-size: 20px;
-    margin: 10px 0 6px 0;
-}
-
-p {
-    margin: 0 0 30px 0;
-    color: #565973;
-}
-
-.sidebar-btn {
-    display: block;
-    text-align: left;
-    padding: 14px 24px;
-    border-radius: 8px;
-    transition: ease-in-out 80ms;
-    color: #33354D;
-    i
-
-{
-    margin-right: 12px;
-    color: #9397AD;
-}
-
-&:hover {
-    background-color: #6366F1;
-    color: white;
-    i
-
-{
-    color: white;
-}
-
-}
-}
-
-.active {
-    background-color: #6366F1;
-    color: white;
-    i
-
-{
-    color: white;
-}
-
-}
-}
-
-.details {
-    padding: 50px 110px;
-
-    @media only screen and (max-width: 1400px) {
-        padding: 50px;
-    }
-
-    @media only screen and (max-width: 768px) {
-        padding: 12px;
-    }
-
-    h1
-
-{
-    font-size: 32px;
-    margin: 0 0 22px 0;
-}
-
-h3 {
-    font-size: 20px;
-    color: #6366F1;
-    margin: 0 0 18px 0;
-}
-
-form {
-    label
-
-{
-    font-weight: 700;
-    display: block;
-    margin-bottom: 8px;
-    span
-
-{
-    color: #9397AD;
-}
-
-}
-
-input, textarea {
-    width: 100%;
-    padding: 12px 18px;
-    border: none;
-    outline: 1px solid #D4D7E5;
-    border-radius: 6px;
-    margin-bottom: 22px;
-
-    @media(max-width: 768px) {
-        font-size: 14px;
-    }
-}
-
-.double-input-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-
-    @media(max-width: 1200px) {
-        display: block;
-    }
-}
-
-textarea {
-    resize: none;
-    font-family: 'Manrope', sans-serif;
-    font-size: 16px;
-    height: 100px;
-
-    @media(max-width: 768px) {
-        font-size: 14px;
-    }
-}
-
-.btn-container {
-    margin-top: 8px;
-
-    @media only screen and (max-width: 768px) {
-        display: flex;
-    }
-
-    .btn
-
-{
-    border: none;
-    border-radius: 6px;
-    margin-right: 15px;
-    padding: 12px 24px;
-    cursor: pointer;
-}
-
-}
-}
-
-.basic-info-form {
-    padding-bottom: 40px;
-    border-bottom: 1px solid #E2E5F1;
-    margin-bottom: 38px;
-}
-}

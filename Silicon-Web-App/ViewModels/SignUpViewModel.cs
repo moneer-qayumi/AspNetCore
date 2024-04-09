@@ -30,6 +30,8 @@ public class SignUpViewModel
     [Compare(nameof(Password), ErrorMessage = "Password must be confirmed")]
     public string ConfirmPassword { get; set; } = null!;
 
+    [Display(Name ="I agree to the Terms & Conditions.")]
+    //[CheckBoxRequired(ErrorMessage = "You must accept the terms and conditions to proceed")]
     [Required(ErrorMessage = "Terms and conditions must be accepted")]
     public bool TermsAndConditions { get; set; }
 }
